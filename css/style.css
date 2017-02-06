@@ -1,0 +1,11 @@
+.full-screen {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*if you don't want the indicators or/and the controls*/
+/*.carousel-indicators,
+.carousel-control {
+  display: none;
+}*/

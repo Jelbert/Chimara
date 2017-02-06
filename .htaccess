@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ inspireme.html [NC,L]
+RewriteCond %{HTTP_HOST} ^43\.255\.154\.43
+RewriteRule (.*) http://www.chimarakitchen.com/$1 [R=301,L]
+
+# Disable server signature
+ ServerSignature Off
+
+# BEGIN Expire headers
+ExpiresActive On
+ExpiresDefault "access plus 1 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 604800 seconds"
+ExpiresByType application/javascript "access plus 604800 seconds"
+ExpiresByType text/html "access plus 2592000 seconds"
+# END Expire headers
+

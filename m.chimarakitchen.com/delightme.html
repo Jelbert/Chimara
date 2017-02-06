@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Delight Me</title>
+        <link rel="icon" href="img/fachimara.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Chimara’s menu was designed to boost your energy, keep you calm, and give you a greater sense of happiness and balance">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="dist/css/custom.css" />
+        <script src="js/jquery.min.js"></script>
+        <style>
+        .navbar-header {
+          float: none;
+        }
+        .navbar-toggle {
+          display: block;
+        }
+        .navbar-collapse.collapse {
+          display: none!important;
+        }
+        .navbar-nav {
+          float: none!important;
+        }
+        .navbar-nav>li {
+          float: none;
+        }
+        .navbar-collapse.collapse.in{
+          display:block !important;
+        }      
+        </style>
+        <style>
+            .carousel-control{position:fixed}
+        </style>
+        <style>
+        #work-in-progress {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          font-size: 150px;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          //text-align: center;
+          //vertical-align: middle;
+          //color: #000000;
+          z-index: 200000;
+          background-color: #fff;
+          overflow: hidden;
+        }
+
+        .work-spinner {
+          background-image: url(img/loading.gif);
+          //background-color: rgba(0,0,0,0);
+          //border: 9px solid rgba(27,61,226,0.9);
+          opacity: 1;
+          //border-left: 5px solid rgba(0,0,0,0);
+          //border-radius: 100px;
+          //-webkit-box-shadow: 0 0 35px #1B3DE2;
+          //box-shadow: 0 0 35px #1B3DE2;
+          width: 100px;
+          height: 100px;
+          margin: 200px auto;
+          -moz-animation: spin .5s infinite linear;
+          -webkit-animation: spin .5s infinite linear;
+          -o-animation: spin .5s infinite linear;
+          animation: spin .5s infinite linear;
+        }
+        </style>
+
+        
+    </head>
+    
+    
+    
+    
+    <body>
+        <div id="work-in-progress" >
+        <div class="work-spinner"></div>
+        </div>
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="overflow-x: auto;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand page-scroll" >
+                    <img src="img/logo/chimaralogo.png" width="150px" height="auto"/>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  >
+                <ul class="nav navbar-nav navbar-right" >
+                    <li data-target="#carousel-example-generic" data-slide-to="0">
+                        <a href="#">Healthy</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1">
+                        <a href="#">Vegetarian</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2">
+                        <a href="#">Stressed</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3">
+                        <a href="#">Constipated</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4">
+                        <a href="#">Skin-tired</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5">
+                        <a href="#">Fatigued</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6">
+                        <a href="#">Brain-drained</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="7">
+                        <a href="#">Adventurous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>     
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner" >
+      
+    <div class="item active">   
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/healthytablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/healthytablet.jpg" width="100%" height="auto" >
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/healthyportrait.jpg" width="100%" >
+            </div>
+    </div>
+
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/vegetariantablet.jpg" width="100%" >
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/vegetariantablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/vegetarianportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/stressedtablet.jpg" width="100%" height="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/stressedtablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/stressedportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/tummytroubletablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/tummytroubletablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/tummytroubleportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/skintiredtablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/skintiredtablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/skintiredportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/fatiguetablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/fatiguetablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/fatigueportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/braindraintablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/tablet/braindraintablet.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/braindrainportrait.jpg" width="100%">
+            </div>
+    </div>
+    <div class="item">
+            <div id="maincontent" class="hidden-lg hidden-xs">
+                <img class="slide-image" src="img/foodguide/tablet/adventuroustablet.jpg" width="100%">
+            </div>
+            <div id="maincontent" class="hidden-md hidden-sm">
+                <img class="slide-image" src="img/foodguide/landscape/adventurouslandscape.jpg" width="100%">
+            </div>
+            <div id="message" >
+                <img class="slide-image" src="img/foodguide/portrait/adventurousportrait.jpg" width="100%">
+            </div>
+    </div>
+  </div>
+</div>
+        
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    
+    
+        <script type="text/javascript" src="dist/js/custom.js"></script>
+        <script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
+        <script>
+        $(document).ready(function() {
+
+        $(".carousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        $(".carousel").swipeleft(function() {  
+            $(this).carousel('next');
+        });
+
+        });
+        $('.carousel').carousel({
+          interval: false,
+          pause: "false"
+        });
+        $(document).click(function(e) {
+                if (!$(e.target).is('a')) {
+                    $('.collapse').collapse('hide');        
+                }
+            });
+            $(window).bind("load", function () {
+        $('#work-in-progress').fadeOut(1000);
+    });
+        </script>
+
+</body>
+</html>

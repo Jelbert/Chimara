@@ -1,0 +1,26 @@
+#maincontent{
+    //width:100%;
+    //background-image: url(../img/study3/desktopcoldnfresh.png);
+}
+#message{
+    //width:100%;
+    //background-image: url(../img/study3/mobilecoldnfresh.png);
+}
+
+
+
+   @media screen and (orientation:portrait) {
+        /* Portrait styles */
+        /*hide your main content and display message */
+    #maincontent{display:none}
+    #message{display:normal}
+
+    }
+    /* Landscape */
+    @media screen and (orientation:landscape) {
+        /* Landscape styles */
+        /* show your content*/
+       #maincontent{display:normal}
+       #message{display:none}
+
+    }

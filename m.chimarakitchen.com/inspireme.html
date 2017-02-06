@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inspire Me</title>
+        <link rel="icon" href="img/fachimara.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Discover balanced varieties of Chimara Kitchen’s feel good food of fresh salads, healthy wraps, hearty brown rice meals, tasty Panini sandwiches and savory pasta eats; with delightful protein selections of chicken, tuna, faux beef and tofu.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="dist/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="dist/css/index.css">
+        <script src="js/jquery.min.js"></script>
+        <style>
+        .navbar-header {
+          float: none;
+        }
+        .navbar-toggle {
+          display: block;
+        }
+        .navbar-collapse.collapse {
+          display: none!important;
+        }
+        .navbar-nav {
+          float: none!important;
+        }
+        .navbar-nav>li {
+          float: none;
+        }
+        .navbar-collapse.collapse.in{
+          display:block !important;
+        }
+        </style>
+        <style>
+        #work-in-progress {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          font-size: 150px;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          //text-align: center;
+          //vertical-align: middle;
+          //color: #000000;
+          z-index: 200000;
+          background-color: #fff;
+          overflow: hidden;
+        }
+
+        .work-spinner {
+          background-image: url(img/loading.gif);
+          //background-color: rgba(0,0,0,0);
+          //border: 9px solid rgba(27,61,226,0.9);
+          opacity: 1;
+          //border-left: 5px solid rgba(0,0,0,0);
+          //border-radius: 100px;
+          //-webkit-box-shadow: 0 0 35px #1B3DE2;
+          //box-shadow: 0 0 35px #1B3DE2;
+          width: 100px;
+          height: 100px;
+          margin: 200px auto;
+          -moz-animation: spin .5s infinite linear;
+          -webkit-animation: spin .5s infinite linear;
+          -o-animation: spin .5s infinite linear;
+          animation: spin .5s infinite linear;
+        }
+        </style>
+	<script>
+$(window).bind("load", function () {
+                    $('#work-in-progress').fadeOut(1000);
+                });
+	</script>
+    </head>
+    
+    <body>
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand page-scroll" >
+                    <img src="img/logo/chimaralogo.png" width="150px" height="auto"/>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                <ul class="nav navbar-nav navbar-right" >
+                    <li data-target="#carousel-example-generic" data-slide-to="0">
+                        <a href="#">Good Foundation</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1">
+                        <a href="#">Good Earth</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2">
+                        <a href="#">Good Food</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3">
+                        <a href="#">Good Future</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4">
+                        <a href="#">Good Health</a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5">
+                        <a href="#">Good Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+        <div class="section full-screen" style="background-image: url(img/background/desktopbackground/blog1.jpg);">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item">
+        <img src="test/Test5.jpg" alt="Third Image">
+    </div>
+    <div class="item">
+        <img src="img/inspireme/goodearth.jpg"  alt="First Image">
+    </div>
+    <div class="item">
+        <img src="img/inspireme/goodfood.jpg" alt="Second Image">
+    </div>
+    <div class="item">
+        <img src="img/inspireme/goodfuture.jpg" alt="Third Image">
+    </div>
+    <div class="item">
+        <img src="img/inspireme/goodhealth.jpg" alt="Third Image">
+    </div>
+    <div class="item">
+        <img src="img/inspireme/goodservice.jpg" alt="Third Image">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+                            
+            </div>
+        
+    
+    
+        <script type="text/javascript" src="dist/js/custom.js"></script>
+        <script type="text/javascript" src="dist/js/index.js"></script>
+        <script>
+        var $item = $('.carousel .item'); 
+        var $wHeight = $(window).height();
+        $item.eq(0).addClass('active');
+        $item.height($wHeight); 
+        $item.addClass('full-screen');
+
+        $('.carousel img').each(function() {
+          var $src = $(this).attr('src');
+          var $color = $(this).attr('data-color');
+          $(this).parent().css({
+            'background-image' : 'url(' + $src + ')',
+            'background-color' : $color
+          });
+          $(this).remove();
+        });
+
+        $(window).on('resize', function (){
+          $wHeight = $(window).height();
+          $item.height($wHeight);
+        });
+
+        $('.carousel').carousel({
+          interval: false,
+          pause: "false"
+        });
+        $(document).click(function(e) {
+                if (!$(e.target).is('a')) {
+                    $('.collapse').collapse('hide');        
+                }
+            });
+        </script>
+        <script>
+
+        $(document).ready(function() {
+
+        $(".carousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        $(".carousel").swipeleft(function() {  
+            $(this).carousel('next');
+        });
+
+        });
+        </script>
+     </body>   
+</html>
